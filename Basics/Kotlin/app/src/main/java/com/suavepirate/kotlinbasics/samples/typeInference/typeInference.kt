@@ -1,4 +1,4 @@
-package com.suavepirate.kotlinbasics.samples
+package com.suavepirate.kotlinbasics.samples.typeInference
 
 
 class PetAdoptionService {
