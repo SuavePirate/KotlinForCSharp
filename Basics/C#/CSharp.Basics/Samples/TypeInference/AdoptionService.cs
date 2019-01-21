@@ -9,11 +9,10 @@ namespace CSharp.Basics.Samples.TypeInference
     public class DogAdoptionService
     {
         public List<AdoptablePet> Pets { get; set; }
-        public void GetPetInfo(string id)
+        public void AdoptPet(string id)
         {
             var petExists = PetExists(p => p.Id == id);
-            String explicitPetName = "Bentley";
-            var petName = "Bentley"; // inferred string
+            // do something to get pet info
         }
 
         public bool PetExists(Expression<Func<AdoptablePet, bool>> predicate)
